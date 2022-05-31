@@ -1,0 +1,22 @@
+.input-entry {
+    height: 45px;
+    padding: 10px 20px 10px 20px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 115%;
+    color: $color-dark-grey;
+    
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+
+    &::placeholder {
+        margin: 10px 0 10px;
+
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 1.25px;
+
+        color: $color-gray;
+    }
+}

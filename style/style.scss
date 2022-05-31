@@ -1,0 +1,13 @@
+@import './reset.scss'; // обнуление стилей
+@import './global.scss'; // глобавльные стили
+
+@import './typography.scss'; // Типография
+
+// ------- Компоненты -------
+@import './components/button.scss'; // Кнопка
+@import './components/input-entry.scss'; // Поле ввода на вход в профиль
+@import './components/input.scss'; // Поле ввода, основной
+
+
+@import './components/profile-entry.scss'; // Вход на сайт
+@import './components/my-profile.scss'; // Мой профиль

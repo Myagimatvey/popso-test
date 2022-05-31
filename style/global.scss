@@ -1,0 +1,19 @@
+// ------- Цвета ------- 
+
+$color-popso: #D6073D; // "Бордовый цвет", POPSO
+$color-dark-grey: #303136; // "Темно-серый" цвет
+$color-gray: #9496A6; // "Серый" цвет
+$color-light-gray: #C2C2C2; // "Светло-серый" цвет
+$color-background: #EFF1F9; // Цвет заднего фона "Серый"
+
+
+
+// ------- Общий стиль для грид контейнера -------
+[class*="__containersize"]{
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0px 15px; /* отступы безопасности по краям */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 40px;
+}
