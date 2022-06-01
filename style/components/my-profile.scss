@@ -1,4 +1,6 @@
 .my-profile {
+
+    $this: &;
     min-height: 100vh;
     background-color: $color-background;
     &__containersize {
@@ -6,10 +8,7 @@
     }
 
     &__title {
-        grid-column-start: 1;
-        grid-column-end: 12;
-
-        margin-top: 40px;
+         
     }
 
     &__form {
@@ -21,6 +20,8 @@
 
         margin-top: 30px;
 
+        border-radius: 10px;
+
         background-color: white;
     }
 
@@ -28,19 +29,49 @@
         display: flex;
         width: 100%;
 
+        
     }
 
     &__data {
         display: flex;
         flex-direction: column;
         width: 100%;
+
+        margin: 20px 40px 0 40px;
         
         
+    }
+
+    &__container {
+        &__error {
+            #{$this}__input {
+                border-bottom: 1px solid $color-popso;
+            }
+            #{$this}__container-text-error {
+                opacity: 1;
+            }
+        }
+    }
+
+    
+
+    &__container-text {
+        color: $color-gray;
+        
+    }
+
+    &__container-text-error {
+        opacity: 0;
+        margin-top: 8px;
+
+        font-size: 10px;
+        color: $color-popso;
     }
 
     &__input {
         width: 100%;
         
+        font-size: 14px;
     
     }
     

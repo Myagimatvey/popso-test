@@ -2,24 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./src/img/popso-icon-link.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Мой профиль</title>
   </head>
   <body>
     <section class="my-profile">
       <div class="my-profile__containersize">
-        <h2 class="my-profile__title">Мой профиль</h2>
+        <h2 class="my-profile__title title">Мой профиль</h2>
         <form class="my-profile__form">
           <div class="my-profile__wrapper">
+
             <div class="my-profile__data">
-              <input class="my-profile__input input" type="text">
-              <input class="my-profile__input input" type="text">
+              <div class="my-profile__container">
+                <span class="my-profile__container-text">Имя</span>
+                <input class="my-profile__input input" type="text">
+                <span class="my-profile__container-text-error">Пожалуйста заполните поле</span>
+              </div>
+              <div class="my-profile__container my-profile__container__error">
+                <span class="my-profile__container-text">Фамилия</span>
+                <input class="my-profile__input input" type="text">
+                <span class="my-profile__container-text-error">Пожалуйста заполните поле</span>
+              </div>
             </div>
+
             <div class="my-profile__data">
-              <input class="my-profile__input input" type="password">
-              <input class="my-profile__input input" type="text">
+              <div class="my-profile__container">
+                <span class="my-profile__container-text">Смените пароль</span>
+                <input class="my-profile__input input" type="password">
+                <span class="my-profile__container-text-error">Пожалуйста заполните поле</span>
+              </div>
+              <div class="my-profile__container">
+                <span class="my-profile__container-text">Смените логин</span>
+                <input class="my-profile__input input" type="text">
+                <span class="my-profile__container-text-error">Пожалуйста заполните поле</span>
+              </div>
             </div>
+
           </div>
           <button class="my-profile__button button" type="button">
             Сохранить

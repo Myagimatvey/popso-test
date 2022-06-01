@@ -4,5 +4,21 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    font-stretch: ultra-expanded;
+}
+
+.title {
+    grid-column-start: 1;
+    grid-column-end: 12;
+
+    font-size: 20px;
+    line-height: 160%;
+    color: $color-dark-grey;
+
+    margin-top: 40px; 
+}
+
+.text-medium {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 115%;
 }
