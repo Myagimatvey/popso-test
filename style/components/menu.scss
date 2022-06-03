@@ -1,0 +1,69 @@
+.menu {
+    
+    
+    
+    height: 100%;
+    width: 260px;
+
+    padding: 24px 0px 50px 50px;
+
+    text-align: left;
+    
+    background-color: white;
+
+    &__logo {
+        width: 80px;
+        
+    }
+
+    &__nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__text {
+        margin-left: 10px;
+    
+    }
+
+    &__exit {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        margin-top: auto;
+    }
+
+    &__icon-exit {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__text-exit {
+        margin-left: 10px;
+    }
+}

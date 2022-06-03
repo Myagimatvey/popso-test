@@ -7,46 +7,86 @@
     <title>Мой профиль</title>
   </head>
   <body>
-    <section class="my-profile">
-      <div class="my-profile__containersize">
-        <h2 class="my-profile__title title">Мой профиль</h2>
-        <form class="my-profile__form">
-          <div class="my-profile__wrapper">
 
-            <div class="my-profile__data">
-              <div class="my-profile__container">
-                <span class="my-profile__container-text">Имя</span>
-                <input class="my-profile__input input" type="text">
-                <span class="my-profile__container-text-error">Пожалуйста заполните поле</span>
-              </div>
-              <div class="my-profile__container my-profile__container__error">
-                <span class="my-profile__container-text">Фамилия</span>
-                <input class="my-profile__input input" type="text">
-                <span class="my-profile__container-text-error">Пожалуйста заполните поле</span>
-              </div>
-            </div>
-
-            <div class="my-profile__data">
-              <div class="my-profile__container">
-                <span class="my-profile__container-text">Смените пароль</span>
-                <input class="my-profile__input input" type="password">
-                <span class="my-profile__container-text-error">Пожалуйста заполните поле</span>
-              </div>
-              <div class="my-profile__container">
-                <span class="my-profile__container-text">Смените логин</span>
-                <input class="my-profile__input input" type="text">
-                <span class="my-profile__container-text-error">Пожалуйста заполните поле</span>
-              </div>
-            </div>
-
+    <div class="position">
+      <section class="menu">
+        <img class="menu__logo" src="./src/img/logo.svg" alt="POPSO">
+        <nav class="menu__nav">
+          <ul class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link" href="./profile.html">
+                <img class="menu__icon" src="./src/img/menu-icon/my-profile.svg" alt="">
+                <p class="menu__text">Мой профиль</p>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./task-list.html">
+                <img class="menu__icon" src="./src/img/menu-icon/tasks.svg" alt="">
+                <p class="menu__text">Список задач</p>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                <img class="menu__icon" src="./src/img/menu-icon/statistics.svg" alt="">
+                <p class="menu__text">Статистика</p>
+              </a>
+            </li>
+          </ul>
+          <div class="menu__exit">
+            <a class="menu__link" href="#">
+              <img class="menu__icon-exit" src="./src/img/menu-icon/exit.svg" alt="">
+              <p class="menu__text-exit">Выйти</p>
+            </a>
           </div>
-          <button class="my-profile__button button" type="button">
-            Сохранить
-          </button>
-        </form>
-        
-      </div>      
-    </section>
+        </nav>
+      </section>
+  
+     <div class="position__section">
+      <section class="my-profile">
+        <div class="my-profile__containersize">
+          <h2 class="my-profile__title title">Мой профиль</h2>
+          <form class="my-profile__form">
+            <div class="my-profile__wrapper">
+  
+              <div class="my-profile__data">
+                <div class="my-profile__container">
+                  <span class="my-profile__container-text">Имя</span>
+                  <input class="my-profile__input input" type="text">
+                  <span class="my-profile__container-text-error">Пожалуйста заполните поле</span>
+                </div>
+                <div class="my-profile__container my-profile__container__error">
+                  <span class="my-profile__container-text">Фамилия</span>
+                  <input class="my-profile__input input" type="text">
+                  <span class="my-profile__container-text-error">Пожалуйста заполните поле</span>
+                </div>
+              </div>
+  
+              <div class="my-profile__data">
+                <div class="my-profile__container">
+                  <span class="my-profile__container-text">Смените пароль</span>
+                  <input class="my-profile__input input" type="password">
+                  <span class="my-profile__container-text-error">Пожалуйста заполните поле</span>
+                </div>
+                <div class="my-profile__container">
+                  <span class="my-profile__container-text">Смените логин</span>
+                  <input class="my-profile__input input" type="text">
+                  <span class="my-profile__container-text-error">Пожалуйста заполните поле</span>
+                </div>
+              </div>
+  
+            </div>
+            <button class="my-profile__button button" type="button">
+              Сохранить
+            </button>
+          </form>
+          
+        </div>      
+      </section>
+     </div>
+    </div>
+    
+
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>

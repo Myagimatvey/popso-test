@@ -1,48 +1,60 @@
 .task-list {
 
+    min-height: 100vh;
+    width: 100%;
+    background-color: $color-background;
+
+    &__containersize {
+
+    }
+    &__title {
+
+    }
+    
+    &__form {
+        grid-column-start: 1;
+        grid-column-end: 13;
+
+        margin-top: 30px;
+        padding: 32px 40px;
+
+        border-radius: 10px;
+
+        background-color: white;
+        
+    }
+
+    &__head {
+        display: grid;
+        grid-template-columns: 1fr 120px;
+
+        border-bottom: 1px solid $color-background;
+    }
+    
+    &__head-text {
+        color: $color-gray;
+    }
+    
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 120px;
+
+        padding: 10px 0;
+
+        border-bottom: 1px solid $color-background;
+    }
+    
+    &__content {
+        
+    }
+    
+    &__input {
+        border: none;
+        font-weight: 400;
+    }
+
+    &__label:checked {
+        color: green;
+    }
 }
 
-.task-list__containersize {
-
-}
-
-.task-list__title {
-
-}
-
-.task-list__form {
-
-}
-
-.task-list__header {
-
-}
-
-.task-list__header-text {
-
-}
-
-.text-medium {
-
-}
-
-.task-list__items {
-
-}
-
-.task-list__item {
-
-}
-
-.task-list-button {
-
-
-}
-
-.task-list__checkbox {
-
-}
-
-.task-list__help-text {
-
-}

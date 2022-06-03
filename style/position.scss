@@ -1,0 +1,13 @@
+.position {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: $color-background;
+    &__section {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+    }
+}

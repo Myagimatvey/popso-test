@@ -7,29 +7,83 @@
     <title>Список задач</title>
   </head>
   <body>
-    <section class="task-list">
+    <div class="position">
+      <section class="menu">
+        <img class="menu__logo" src="./src/img/logo.svg" alt="POPSO">
+        <nav class="menu__nav">
+          <ul class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link" href="./profile.html">
+                <img class="menu__icon" src="./src/img/menu-icon/my-profile.svg" alt="">
+                <p class="menu__text">Мой профиль</p>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./task-list.html">
+                <img class="menu__icon" src="./src/img/menu-icon/tasks.svg" alt="">
+                <p class="menu__text">Список задач</p>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                <img class="menu__icon" src="./src/img/menu-icon/statistics.svg" alt="">
+                <p class="menu__text">Статистика</p>
+              </a>
+            </li>
+          </ul>
+          <div class="menu__exit">
+            <a class="menu__link" href="#">
+              <img class="menu__icon-exit" src="./src/img/menu-icon/exit.svg" alt="">
+              <p class="menu__text-exit">Выйти</p>
+            </a>
+          </div>
+        </nav>
+      </section>
+      
+      <div class="position__section">
+        <section class="task-list">
 
-        <div class="task-list__containersize">
+          <div class="task-list__containersize">
             <h2 class="task-list__title title">Список задач</h2>
             <div class="task-list__form">
-                <div class="task-list__header">
-                    <p class="task-list__header-text text-medium"></p>
-                    <p class="task-list__header-text text-medium"></p>
+              <div class="task-list__head">
+                <p class="task-list__head-text">Задача</p>
+                <p class="task-list__head-text">Статус</p>
+              </div>
+              <div class="task-list__wrapper">
+                <input class="task-list__input input" type="text" value="Задание 1">           
+                <div class="task-list__content">
+                  <input type="checkbox" class="custom-checkbox" id="checklist" name="zadacha-1" value="yes">
+                  <label class="task-list__label" for="checklist">Выполнено</label>
                 </div>
-                <ul class="task-list__items">
-                    <li class="task-list__item">
-                        <input class="input" type="text">
-                        <div class="task-list-button">
-                            <input type="checkbox" class="task-list__checkbox" id="checkbox" name="checkbox" value="yes">
-                            <label for="checkbox">Выполнено</label>
-                            <span class="task-list__help-text"></span>
-                        </div>
-                    </li>
-                </ul>
+              </div>
+              <div class="task-list__wrapper">
+                <input class="task-list__input input" type="text" value="Задание 2">           
+                <div class="task-list__content">
+                  <input type="checkbox" class="custom-checkbox" id="checklist1" name="zadacha-2" value="yes">
+                  <label class="task-list__label" for="checklist1">Выполнено</label>
+                </div>
+              </div>
+              <div class="task-list__wrapper">
+                <input class="task-list__input input" type="text" value="Задание 3">           
+                <div class="task-list__content">
+                  <input type="checkbox" class="custom-checkbox" id="checklist2" name="zadacha-3" value="yes">
+                  <label class="task-list__label" for="checklist2">Выполнено</label>
+                </div>
+              </div>
+              <div class="task-list__wrapper">
+                <input class="task-list__input input" type="text" value="Задание 4">           
+                <div class="task-list__content">
+                  <input type="checkbox" class="custom-checkbox" id="checklist3" name="zadacha-4" value="yes">
+                  <label class="task-list__label" for="checklist3">Выполнено</label>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
 
-    </section>
+        </section>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
