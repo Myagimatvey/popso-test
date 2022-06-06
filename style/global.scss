@@ -12,9 +12,20 @@ $color-green: #51CB3D; // Цвет "зеленый"
 // ------- Общий стиль для грид контейнера -------
 [class*="__containersize"]{
     max-width: 920px;
+
     margin: 0 auto;
     padding: 0px 15px; /* отступы безопасности по краям */
+
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 40px;
+
+    @include tablet {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include phone {
+        padding: 0 5px;
+    }
 }

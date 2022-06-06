@@ -1,14 +1,17 @@
 @import './reset.scss'; // обнуление стилей
+@import './components/mixins.scss'; // Миксины
 @import './global.scss'; // глобавльные стили
 
+
 @import './typography.scss'; // Типография
+
 
 // ------- Компоненты -------
 @import './components/button.scss'; // Кнопка
 @import './components/input-entry.scss'; // Поле ввода на вход в профиль
 @import './components/input.scss'; // Поле ввода, основной
 @import './components/checkbox.scss'; // checkbox стилизованный 
-@import './position.scss';
+@import './position.scss';  // размещение блоков с помощью флекс-элементов
 
 @import './components/menu.scss'; // Меню
 
